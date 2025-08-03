@@ -1,75 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
+  <a href="#hero" class="skip-link">Skip to Content</a>
+  <a id="top"></a>
+
   <header>
-    <h1>Welcome to My Portfolio</h1>
-    <p>Passionate about building innovative solutions with code</p>
+    <nav>
+      <h1 class="logo">MyPortfolio</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <div class="container">
-    <section id="skills">
-      <h2>Programming Languages</h2>
-      <ul class="skills">
-        <li>JavaScript</li>
-        <li>Python</li>
-        <li>HTML/CSS</li>
-        <li>Node.js</li>
-      </ul>
-    </section>
+  <section id="hero" class="fade-slide">
+    <img src="assets/profile.jpg" alt="Profile Picture" class="profile-img"/>
+    <h2>Hello, I'm Emmanuel Oscar</h2>
+    <p>A passionate web developer building beautiful and functional web experiences.</p>
+  </section>
 
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Hello! I'm a frontend developer passionate about creating beautiful and functional web applications. My journey in tech started with a curiosity for coding, and now I love solving problems through intuitive design and clean code.</p>
-    </section>
+  <section id="about" class="fade-slide">
+    <h2>About Me</h2>
+    <p>I love creating user-friendly, accessible, and visually engaging websites with clean, maintainable code.</p>
+  </section>
 
-    <section id="education">
-      <h2>Educational Background</h2>
-      <p>Bachelor of Science in Computer Science | XYZ University (2018-2022)</p>
-      <a href="#" class="cv-button">Download CV</a>
-    </section>
+  <section Class="skills" id="skills" class="fade-slide">
+    <h2>Programming Languages</h2>
+    <div class="skills-bar">
+      <label>HTML</label>
+      <div class="bar"><div class="progress" style="width: 95%"></div></div>
 
-    <section id="interests">
-      <h2>Interests</h2>
-      <p>I am deeply interested in UI/UX design, frontend frameworks, and exploring the intersection of technology and creativity. I also enjoy contributing to open-source projects and learning new tools.</p>
-    </section>
+      <label>CSS</label>
+      <div class="bar"><div class="progress" style="width: 90%"></div></div>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="projects">
-        <div class="project-card">
-          <h3>Project 1</h3>
-          <p>A responsive portfolio website built using HTML and CSS.</p>
-        </div>
-        <div class="project-card">
-          <h3>Project 2</h3>
-          <p>An e-commerce platform developed with React and Node.js.</p>
-        </div>
-        <div class="project-card">
-          <h3>Project 3</h3>
-          <p>A task management app designed with user-friendly interfaces.</p>
-        </div>
+      <label>JavaScript</label>
+      <div class="bar"><div class="progress" style="width: 85%"></div></div>
+
+      <label>Python</label>
+      <div class="bar"><div class="progress" style="width: 80%"></div></div>
+    </div>
+  </section>
+
+  <section id="education" class="fade-slide">
+    <h2>Education</h2>
+    <p>B.Sc. in Computer Science - XYZ University (2020)</p>
+    <a href="assets/your_cv.pdf" download class="btn">Download CV</a>
+  </section>
+
+  <section Class="projects" id="projects" class="fade-slide">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Project One</h3>
+        <p>A cool responsive website made with HTML and CSS.</p>
+        <a href="#" class="tooltip" data-tooltip="View on GitHub">GitHub</a>
+        <a href="#" class="tooltip" data-tooltip="Live Preview">Live Demo</a>
       </div>
-    </section>
+      <div class="project-card">
+        <h3>Project Two</h3>
+        <p>A minimal portfolio web app with clean animations and design.</p>
+        <a href="#" class="tooltip" data-tooltip="View on GitHub">GitHub</a>
+        <a href="#" class="tooltip" data-tooltip="Live Preview">Live Demo</a>
+      </div>
+       <div class="project-card">
+        <h3>Project Two</h3>
+        <p>A minimal portfolio web app with clean animations and design.</p>
+        <a href="#" class="tooltip" data-tooltip="View on GitHub">GitHub</a>
+        <a href="#" class="tooltip" data-tooltip="Live Preview">Live Demo</a>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
+  <section id="experience" class="fade-slide">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="entry">
+        <h3>Frontend Intern</h3>
+        <span>2023 - 2024</span>
+        <p>Worked on building accessible UI components and responsive layouts.</p>
+      </div>
+      <div class="entry">
+        <h3>Freelance Web Developer</h3>
+        <span>2022 - 2023</span>
+        <p>Delivered custom websites for small businesses using HTML, CSS, and JavaScript.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="fade-slide">
+    <h2>Testimonials</h2>
+    <blockquote>
+      “A brilliant developer who brings great ideas to life with precision.”
+      <footer>- Micheal Adewumi, Software Engineer</footer>
+    </blockquote>
+    <blockquote>
+      “Their passion for clean, functional design is unmatched.”
+      <footer>- Chappie Vlad, Collaborator</footer>
+    </blockquote>
+  </section>
+
+  <section id="contact" class="fade-slide">
+    <div class="contact-container">
+      <div class="contact-header">
+        <h2>Contact Me</h2>
+        <p>I'd love to hear from you! Use the form below to get in touch.</p>
+      </div>
+      <form action="https://formspree.io/f/your-id" method="POST" class="contact-form">
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+        </div>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
       </form>
-    </section>
-  </div>
+    </div>
+  </section>
+
+  <a href="#top" class="back-to-top">↑ Back to Top</a>
 
   <footer>
-    <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+    <p>&copy; 2025 E. Oscar</p>
   </footer>
 </body>
 </html>
