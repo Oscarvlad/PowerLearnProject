@@ -1,34 +1,39 @@
-# Personal Portfolio Website (HTML + CSS Only)
+# My Portfolio Website
 
-This is a responsive, animated, and accessible personal portfolio website built using **only vanilla HTML and CSS** — no JavaScript.
-
-## Live Demo
+Welcome to my personal web development portfolio!  
+This responsive, animated, and accessible portfolio was built with **pure HTML and CSS** (no JavaScript), and it highlights my skills, projects, background, and contact information.
 
 ## Features
 
-- Responsive layout for mobile and desktop
+- Responsive layout (desktop & mobile)
 - Smooth CSS animations
-- Sticky navigation
-- Semantic HTML structure
-- Contact form using Formspree
-- Downloadable CV
-- Clean and accessible design
-
-## Folder Structure
-
-Portfolio/
-├── index.html
-├── css/
-│   └── styles.css
-└── assets/
-    └── my_cv.pdf
+- Dark mode toggle (pure CSS)
+- Print-friendly resume layout
+- Tooltips and timeline components
+- Fully accessible with skip navigation link
+- No JavaScript required
 
 ## Sections
 
-- **Hero**: Brief introduction with my name and title
-- **About Me**: A paragraph about my background and passion
-- **Skills**: List of programming languages I know
-- **Education**: Degree and institution, with downloadable CV
-- **Interests**: What excites me in tech
-- **Projects**: Showcase of my projects with links
-- **Contact Form**: Fully working form powered by Formspree
+- About Me
+- Programming Skills
+- Education
+- Resume (Downloadable)
+- Projects
+- Work Experience
+- Testimonials
+- Contact Form
+
+## Technology Stack
+
+- HTML5
+- CSS3
+- Responsive Grid & Flexbox
+
+## Demo
+
+**Live Site:** [https://your-subdomain.netlify.app](https://your-subdomain.netlify.app)
+
+## License
+
+This project is licensed under the [MIT License](LICENSE.md).
